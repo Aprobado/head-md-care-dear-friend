@@ -19,6 +19,7 @@ public class InactivityManager : MonoBehaviour
     public GameObject sessionPanel;
     public DialogueRunner dialogueRunner;
     public TMP_Text countdownText;
+    public FadeController fadeController;
 
     [Header("Live timers - do not set manually")]
     public float idleTime;
@@ -44,6 +45,9 @@ public class InactivityManager : MonoBehaviour
         if (dialogueRunner == null)
             dialogueRunner = FindFirstObjectByType<DialogueRunner>(FindObjectsInactive.Include);
 
+        if (fadeController == null)
+            fadeController = FindFirstObjectByType<FadeController>(FindObjectsInactive.Include);
+
         if (dialogueRunner == null)
         {
             Debug.LogError("Assign the scene's Dialogue Runner on InactivityManager.", this);
@@ -53,6 +57,8 @@ public class InactivityManager : MonoBehaviour
 
         countdownText.raycastTarget = false;
         ResumeGame();
+        if (fadeController != null)
+            StartCoroutine(fadeController.FadeIn());
     }
 
     private void Update()
@@ -269,6 +275,9 @@ public class InactivityManager : MonoBehaviour
             // Let its pending continuation observe Stop() before destroying the scene.
             await Awaitable.NextFrameAsync();
             await Awaitable.NextFrameAsync();
+
+            if (fadeController != null)
+                await fadeController.FadeOutAsync();
 
             // Also handle leaving Play Mode or an unrelated scene change during the wait.
             if (this == null)

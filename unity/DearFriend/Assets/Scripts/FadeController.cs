@@ -12,6 +12,16 @@ public class FadeController : MonoBehaviour
             canvasGroup = GetComponent<CanvasGroup>();
     }
 
+    public async Awaitable FadeOutAsync()
+    {
+        await FadeAsync(0f, 1f);
+    }
+
+    public async Awaitable FadeInAsync()
+    {
+        await FadeAsync(1f, 0f);
+    }
+
     public IEnumerator FadeOut()
     {
         yield return Fade(0f, 1f);
@@ -34,6 +44,24 @@ public class FadeController : MonoBehaviour
             elapsed += Time.deltaTime;
             canvasGroup.alpha = Mathf.Lerp(start, end, elapsed / fadeDuration);
             yield return null;
+        }
+
+        canvasGroup.alpha = end;
+        canvasGroup.blocksRaycasts = end > 0f;
+    }
+
+    private async Awaitable FadeAsync(float start, float end)
+    {
+        float elapsed = 0f;
+
+        canvasGroup.alpha = start;
+        canvasGroup.blocksRaycasts = true;
+
+        while (elapsed < fadeDuration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            canvasGroup.alpha = Mathf.Lerp(start, end, elapsed / fadeDuration);
+            await Awaitable.NextFrameAsync();
         }
 
         canvasGroup.alpha = end;
