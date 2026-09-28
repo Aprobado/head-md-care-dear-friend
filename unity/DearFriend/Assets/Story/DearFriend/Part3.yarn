@@ -18,6 +18,8 @@ position: 0,0
 
 <<SylviaSittingIdle SylviaMesh>>
 
+<<wait 2>>
+
 Camille: Je te l'avais dit qu'elles étaient bien ces photos !
 Sylvia: Tout le monde a eu sa photo publiée, au final.
 Camille: Mais pas en couverture !
