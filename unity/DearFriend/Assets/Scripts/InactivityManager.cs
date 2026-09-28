@@ -29,6 +29,7 @@ public class InactivityManager : MonoBehaviour
     private float countdownRemaining;
     private int heldCorner = -1;
     private bool restarting;
+    private bool sessionStarted;
 
     private void Start()
     {
@@ -86,9 +87,9 @@ public class InactivityManager : MonoBehaviour
                 if (countdownRemaining <= 0f)
                     RestartGame();
             }
-            else
+            else if (sessionStarted)
             {
-                // The developer menu must not leave an abandoned session stuck.
+                // Only an active play session can become inactive.
                 idleTime += delta;
                 if (idleTime >= idleLimit)
                     OpenMenu(true);
@@ -104,6 +105,9 @@ public class InactivityManager : MonoBehaviour
         }
 
         ResetCornerHold();
+        if (!sessionStarted)
+            return;
+
         idleTime += delta;
         if (idleTime >= idleLimit)
             OpenMenu(true);
@@ -189,6 +193,16 @@ public class InactivityManager : MonoBehaviour
     {
         int seconds = Mathf.CeilToInt(Mathf.Max(0f, countdownRemaining));
         countdownText.text = $"Redémarrage dans {seconds} s\nTouchez l'écran pour annuler.";
+    }
+
+    // Called by the password button when a player starts.
+    public void BeginSession()
+    {
+        if (restarting || sessionStarted)
+            return;
+
+        sessionStarted = true;
+        ResumeGame();
     }
 
     public void ResumeGame()

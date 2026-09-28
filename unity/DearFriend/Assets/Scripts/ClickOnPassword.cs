@@ -6,6 +6,7 @@ using System.Collections;
 [RequireComponent(typeof(AudioSource))]
 public class ClickOnPassword : MonoBehaviour, IPointerDownHandler
 {
+    public InactivityManager inactivityManager;
     public DialogueRunner dialogueRunner;
     public string dialogueNodeName;
 
@@ -29,6 +30,9 @@ public class ClickOnPassword : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (inactivityManager != null)
+            inactivityManager.BeginSession();
+
         StartCoroutine(HandleClick());
     }
 
