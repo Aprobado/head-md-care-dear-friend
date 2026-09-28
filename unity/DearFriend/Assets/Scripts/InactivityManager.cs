@@ -30,6 +30,7 @@ public class InactivityManager : MonoBehaviour
     private int heldCorner = -1;
     private bool restarting;
     private bool sessionStarted;
+    private bool restartRequested;
 
     private void Start()
     {
@@ -56,6 +57,14 @@ public class InactivityManager : MonoBehaviour
 
     private void Update()
     {
+        // Let Yarn finish dispatching its command before stopping dialogue.
+        if (restartRequested)
+        {
+            restartRequested = false;
+            RestartGame();
+            return;
+        }
+
         if (restarting)
             return;
 
@@ -218,6 +227,13 @@ public class InactivityManager : MonoBehaviour
             countdownText.gameObject.SetActive(false);
         if (sessionPanel != null)
             sessionPanel.SetActive(false);
+    }
+
+    [YarnCommand("RestartingGame")]
+    public void RequestRestart()
+    {
+        if (!restarting)
+            restartRequested = true;
     }
 
     public async void RestartGame()

@@ -66,6 +66,13 @@ title: EndCredits
 <<ZoomOutCamera 18.4 0.02 -0.24 10 16.327 -2.22 -0.269>>
 <<activateObject EndCreditsCanva>>
 
+<<jump RestartGame>>
+===
+
+title: RestartGame
+---
+<<wait 7>>
+<<RestartingGame InactivityManager>>
 
 
 ===
