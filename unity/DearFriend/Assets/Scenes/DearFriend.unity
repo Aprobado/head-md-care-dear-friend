@@ -12961,9 +12961,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "ALIREZA ASNAVANDI\nARIADNE MELISSARGOS\nJULIA SANGNAKKARA\nGOLD KIM\n\n\n\n\n\n\nDOUGLAS
     E. STANLEY\nSABRINA CALVINO\nPIERRE ROSSEL\nANDR\xC9A RODRIGUES\nRAFA\xCBL MUNOZ\n\n\n\n\n\n\xC0
-    LA MAISON DE L\u2019ADRET ET \xC0 SES R\xC9SIDENTS POUR LEUR COLLABORATION\n\xC0
-    NOS CAMARADES DE CLASSE POUR LEUR SOUTIEN\n\xC0 CASSANDRE POIRIER ET ... POUR
-    LEUR CONFIANCE"
+    la Maison de l'Adret et ses r\xE9sidents pour leur pr\xE9cieuse collaboration\n\n\xC0
+    Laura Gy\xF6rik Costas, Cassandre Poirier-Simon, et\naux Biblioth\xE8ques municipales
+    de Gen\xE8ve pour leur confiance\n\n\xC0 nos camarads de classe pour leur soutien"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a68b57ef0f0cc04e94bf157dc374a1f, type: 2}
   m_sharedMaterial: {fileID: -5780925004721183016, guid: 8a68b57ef0f0cc04e94bf157dc374a1f, type: 2}
@@ -15936,7 +15936,7 @@ MonoBehaviour:
   day1DialogueNode: Start
   day2DialogueNode: Part2
   day3DialogueNode: Part3
-  startDialogueOnStart: 1
+  startDialogueOnStart: 0
   mainCamera: {fileID: 330585545}
   day1CameraTarget: {fileID: 330585546}
   day2CameraTarget: {fileID: 330585546}

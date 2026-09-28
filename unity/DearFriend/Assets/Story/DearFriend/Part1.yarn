@@ -91,7 +91,7 @@ title: FileFacture
 <<startPulsatingFile PDF_facture>>
 // Fichier 3 -> Folder_facture
 Camille: "Facture" ?
-Sylvia: Hé bien, "Factures".
+Sylvia: "Factures".
 
 <<setCanDrag PDF_facture true>>
 
