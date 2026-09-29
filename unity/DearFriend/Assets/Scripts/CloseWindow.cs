@@ -71,7 +71,22 @@ public class CloseWindow : MonoBehaviour, IPointerClickHandler
         }
 
         DesktopItem.SetContentOpen(false);
-        Destroy(transform.parent.gameObject);
+
+        Transform buttonRoot = transform.parent;
+        Transform window = buttonRoot != null ? buttonRoot.parent : null;
+
+        if (window != null && window.name == "ErrorBox")
+        {
+            foreach (Transform child in window)
+            {
+                child.gameObject.SetActive(false);
+            }
+        }
+        else if (buttonRoot != null)
+        {
+            Destroy(buttonRoot.gameObject);
+        }
+
         //start the node specified in clickNodeName
         if (dialogueRunner != null && !string.IsNullOrEmpty(clickNodeName))
         {

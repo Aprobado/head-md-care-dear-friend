@@ -40,6 +40,10 @@ public class PulsatingFile : MonoBehaviour
     public void pulsatingButton()
     {
         pulsing = true;
+
+        CloseButtons closeButton = GetComponent<CloseButtons>();
+        if (closeButton != null)
+            closeButton.SetCanClick(true);
     }
 
     [YarnCommand("stopPulsatingFile")]

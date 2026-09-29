@@ -1692,7 +1692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloseButtons
   dialogueRunner: {fileID: 1056935913}
-  nodeNameAfterClose: 
+  nodeNameAfterClose: lookingFolderContent
+  canClick: 0
 --- !u!114 &134683811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3034,6 +3035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CloseButtons
   dialogueRunner: {fileID: 0}
   nodeNameAfterClose: 
+  canClick: 0
 --- !u!114 &228815369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7822,6 +7824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloseButtonPhoto02
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3bc205e095c9e44e89f625058e48fdf3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7880,7 +7886,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloseButtons
   dialogueRunner: {fileID: 1056935913}
-  nodeNameAfterClose: 
+  nodeNameAfterClose: lookingFolderContent
+  canClick: 0
 --- !u!114 &705846855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10796,7 +10803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &850801455
 Transform:
   m_ObjectHideFlags: 0
@@ -13176,7 +13183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloseButtons
   dialogueRunner: {fileID: 1056935913}
-  nodeNameAfterClose: 
+  nodeNameAfterClose: lookingFolderContent
+  canClick: 0
 --- !u!114 &1005382431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16169,8 +16177,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309781435}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0469837, y: 0.70554405, z: 0.7055443, w: 0.04698374}
-  m_LocalPosition: {x: -0.443, y: 0.86899996, z: -3.021}
+  m_LocalRotation: {x: -0.029147672, y: 0.70650566, z: 0.70650595, w: 0.02914772}
+  m_LocalPosition: {x: -0.43670002, y: 0.86899996, z: -3.0203001}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16426,7 +16434,7 @@ MonoBehaviour:
   trashBigScale: 1.3
   trashPulseDuration: 1
   folderTransform: {fileID: 5038469255740084844}
-  folderBigScale: 1.1
+  folderBigScale: 1.2
   folderPulseDuration: 1
 --- !u!82 &1317669092
 AudioSource:
@@ -18085,6 +18093,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 62a8ebc3be672504da1ec5f851e40385, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1417272281}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 62a8ebc3be672504da1ec5f851e40385, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1417272282}
   m_SourcePrefab: {fileID: 100100000, guid: 62a8ebc3be672504da1ec5f851e40385, type: 3}
 --- !u!4 &1417272280 stripped
 Transform:
@@ -18112,6 +18123,21 @@ MonoBehaviour:
   day3:
     target: {fileID: 0}
     visible: 0
+--- !u!114 &1417272282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789582506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1229725ff48439ab0e0039ec78d600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAppears
+  dialogueRunner: {fileID: 0}
+  dialogueNodeName: 
+  objectToActivate: {fileID: 0}
 --- !u!1 &1424159956
 GameObject:
   m_ObjectHideFlags: 0
@@ -18793,6 +18819,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bc205e095c9e44e89f625058e48fdf3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1628669178}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bc205e095c9e44e89f625058e48fdf3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1628669183}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bc205e095c9e44e89f625058e48fdf3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1628669182}
   m_SourcePrefab: {fileID: 100100000, guid: 3bc205e095c9e44e89f625058e48fdf3, type: 3}
 --- !u!1 &1512067972
 GameObject:
@@ -20329,6 +20361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CloseButtons
   dialogueRunner: {fileID: 0}
   nodeNameAfterClose: 
+  canClick: 0
 --- !u!114 &1588440762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20341,8 +20374,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10512eb411a70d84796a2516bab814ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloseButtons
-  dialogueRunner: {fileID: 0}
-  nodeNameAfterClose: 
+  dialogueRunner: {fileID: 1056935913}
+  nodeNameAfterClose: lookingFolderContent
+  canClick: 0
 --- !u!114 &1588440763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20481,6 +20515,139 @@ CapsuleCollider:
   m_Height: 0.10088591
   m_Direction: 1
   m_Center: {x: -0.0000019073486, y: 0, z: 0}
+--- !u!82 &1628669182
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628669176}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1628669183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628669176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13fe411a5dc264e3bb9333191ca24955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DesktopItem
+  canClick: 0
+  canDrag: 0
+  inputSound: {fileID: 0}
+  dropSound: {fileID: 0}
+  dialogueRunner: {fileID: 1056935913}
+  clickNodeName: 
+  trashNodeName: 
+  trashAfterOpenNodeName: 
+  dropElsewhereNodeName: 
+  cam: {fileID: 0}
+  selectedScaleMultiplier: 1.15
+  fileContentObject: {fileID: 0}
+  contentWindowsToIgnore: []
+  assetToDisableWhenOpen: {fileID: 0}
+  trashHoverMaterial: {fileID: 0}
+  trashObject: {fileID: 0}
+  folderObject: {fileID: 0}
+  folderHoverMaterial: {fileID: 0}
+  trashTransform: {fileID: 0}
+  trashBigScale: 1.3
+  trashPulseDuration: 1
+  folderTransform: {fileID: 0}
+  folderBigScale: 1.3
+  folderPulseDuration: 1
 --- !u!1 &1636909624
 GameObject:
   m_ObjectHideFlags: 0
@@ -21079,6 +21246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloseButtonPhoto03
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3bc205e095c9e44e89f625058e48fdf3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21137,7 +21308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloseButtons
   dialogueRunner: {fileID: 1056935913}
-  nodeNameAfterClose: 
+  nodeNameAfterClose: lookingFolderContent
+  canClick: 0
 --- !u!114 &1672311859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29047,7 +29219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &970797241911033365
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29659,13 +29831,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7549932920434845324}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5368363, y: 0.4602247, z: 0.46022442, w: 0.5368366}
-  m_LocalPosition: {x: 0.12, y: 0.65247, z: 0.2}
+  m_LocalRotation: {x: -0.40474015, y: 0.6200021, z: 0.5491611, w: 0.3875628}
+  m_LocalPosition: {x: 1.3600024, y: 0.75999993, z: -1.1400037}
   m_LocalScale: {x: 130.45113, y: 130.45111, z: 130.45113}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9090317204097134720}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 111.752}
 --- !u!1 &3655000510665859825
 GameObject:
   m_ObjectHideFlags: 0
@@ -31541,7 +31713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8649182310357588308
 Transform:
   m_ObjectHideFlags: 0
@@ -31677,8 +31849,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8461309294735043130}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.3796971, z: -0, w: 0.9251109}
-  m_LocalPosition: {x: -0.41, y: -0.712, z: 5.747}
+  m_LocalRotation: {x: -0, y: 0.17789187, z: -0, w: 0.98405004}
+  m_LocalPosition: {x: -0.36899996, y: -0.712, z: 5.284}
   m_LocalScale: {x: 0.033446833, y: 0.033446833, z: 0.033446833}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31706,8 +31878,8 @@ MonoBehaviour:
     target: {fileID: 562731072}
     visible: 0
   day2:
-    target: {fileID: 1533916451}
-    visible: 1
+    target: {fileID: 9090317204097134720}
+    visible: 0
   day3:
     target: {fileID: 1834021018}
     visible: 0

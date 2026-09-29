@@ -123,6 +123,16 @@ public class DesktopItem : MonoBehaviour,
             return false;
         }
 
+        if (name.StartsWith("File-photo", System.StringComparison.OrdinalIgnoreCase) &&
+            (openContentObject.name.Equals("file-Tuto", System.StringComparison.OrdinalIgnoreCase) ||
+             openContentObject.name.Equals("file-Guide", System.StringComparison.OrdinalIgnoreCase) ||
+             openContentObject.name.Equals("file-Concours", System.StringComparison.OrdinalIgnoreCase)))
+        {
+            openContentObject.SetActive(false);
+            SetContentOpen(false);
+            return false;
+        }
+
         if (openContentObject != null &&
             transform.IsChildOf(openContentObject.transform))
         {

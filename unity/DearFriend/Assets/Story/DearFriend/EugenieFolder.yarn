@@ -25,10 +25,6 @@ Sylvia: Le concours... Tu peux ouvrir le fichier ?
 title: concoursPDF
 ---
 
-<<if $isConcoursOpened==true>>
-    <<jump concoursPDF_2>>
-<<endif>>
-
 <<stopPulsatingFile File-concours>>
 
 Sylvia: C'est fini aujourd'hui ?!
@@ -40,7 +36,8 @@ Camille: Mais il est pas trop tard pour le concours!
 Sylvia: Tu peux m'aider à choisir une photo ?
 
 
-//<<startPulsating CloseButtonConcours>>
+<<startPulsatingFile CloseButtonConcours>>
+<<setCanClickForCloseButtons CloseButtonConcours true>>
 <<set $isConcoursOpened=true>>
 <<setObjectColor File-concours #D6D6D6>>
 
@@ -57,18 +54,9 @@ Sylvia: Tu peux m'aider à choisir une photo ?
 title: lookingFolderContent
 ---
 
-<<closeDesktopContent>>
-
 <<if $isPhoto01Opened&& $isPhoto02Opened&& $isPhoto03Opened && $isPhoto04Opened>>
     <<jump KitchenTimer>>
 <<endif>>
-
-===
-title: concoursPDF_2
----
-//<<setCanClick File-concours false>>
-Sylvia: (Soupir)...
-<<jump lookingFolderContent>>
 
 ===
 title: guidePDF
@@ -101,6 +89,7 @@ Sylvia: On avait l'air ridicule.
 ===
 title: OpenPhoto01
 ---
+<<setCanClickForCloseButtons CloseButtonPhoto01 true>>
 <<setCanClick File-photo01 false>>
 <<setObjectColor File-photo01 #D6D6D6>>
 <<set $isPhoto01Opened=true>>
@@ -109,6 +98,9 @@ Sylvia: C'était notre dernière randonnée ensemble.
 
 -> Dire que c'est une belle photo.
     Sylvia: Je n'aime plus trop me voir en photo.
+    Camille: C'est Eugénie à droite ?
+    Camille: Attends.
+    Camille: Vous êtes trop belles ensemble. 
 -> Ne rien dire.
 
 <<jump lookingFolderContent>>
@@ -116,6 +108,7 @@ Sylvia: C'était notre dernière randonnée ensemble.
 
 title: OpenPhoto02
 ---
+<<setCanClickForCloseButtons CloseButtonPhoto02 true>>
 <<setCanClick File-photo02 false>>
 <<setObjectColor File-photo02 #D6D6D6>>
 <<set $isPhoto02Opened=true>>
@@ -126,21 +119,25 @@ Sylvia: Oh oui, je me rappelle. On lui avait fait si peur.
 
 title: OpenPhoto03
 ---
+<<setCanClickForCloseButtons CloseButtonPhoto03 true>>
 <<setCanClick File-photo03 false>>
 <<setObjectColor File-photo03 #D6D6D6>>
 <<set $isPhoto03Opened=true>>
 
-Sylvia: C'est la rivière près de chez nous. On aimait beaucoup se promener là, quand elle pouvait encore marcher.
+Sylvia: C'est la rivière près de chez nous.
+Sylvia: On aimait beaucoup se promener là...
+Sylvia : ... quand elle pouvait encore marcher.
 Sylvia: Après, elle souffrait trop.
 Sylvia: ...
-Sylvia: C'était quelqu'un d'extrêmement joyeux, jusqu'à la fin.
-Sylvia: On riait toujours comme des baleines.
+// Sylvia: C'était quelqu'un d'extrêmement joyeux, jusqu'à la fin.
+// Sylvia: On riait toujours comme des baleines.
 
 <<jump lookingFolderContent>>
 ===
 
 title: OpenPhoto04
 ---
+<<setCanClickForCloseButtons CloseButtonPhoto04 true>>
 <<setCanClick File-photo04 false>>
 <<setObjectColor File-photo04 #D6D6D6>>
 <<set $isPhoto04Opened=true>>
