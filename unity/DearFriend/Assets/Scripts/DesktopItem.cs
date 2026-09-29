@@ -123,7 +123,7 @@ public class DesktopItem : MonoBehaviour,
             return false;
         }
 
-        if (name.StartsWith("File-photo", System.StringComparison.OrdinalIgnoreCase) &&
+        if (name.StartsWith("File-", System.StringComparison.OrdinalIgnoreCase) &&
             (openContentObject.name.Equals("file-Tuto", System.StringComparison.OrdinalIgnoreCase) ||
              openContentObject.name.Equals("file-Guide", System.StringComparison.OrdinalIgnoreCase) ||
              openContentObject.name.Equals("file-Concours", System.StringComparison.OrdinalIgnoreCase)))
@@ -137,6 +137,11 @@ public class DesktopItem : MonoBehaviour,
             transform.IsChildOf(openContentObject.transform))
         {
             return false;
+        }
+
+        if (openContentObject.name.Equals("file-Concours", System.StringComparison.OrdinalIgnoreCase))
+        {
+            return true;
         }
 
         if (openContentObject != null &&

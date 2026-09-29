@@ -100,6 +100,7 @@ Sylvia: C'était notre dernière randonnée ensemble.
     Sylvia: Je n'aime plus trop me voir en photo.
     Camille: C'est Eugénie à droite ?
     Camille: Attends.
+    <<deactivateObject PostItNote>>
     Camille: Vous êtes trop belles ensemble. 
 -> Ne rien dire.
 

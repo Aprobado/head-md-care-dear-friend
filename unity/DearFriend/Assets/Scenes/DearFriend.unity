@@ -7514,6 +7514,7 @@ GameObject:
   - component: {fileID: 618231053}
   - component: {fileID: 618231052}
   - component: {fileID: 618231051}
+  - component: {fileID: 618231054}
   m_Layer: 0
   m_Name: Photo01
   m_TagString: Untagged
@@ -7614,6 +7615,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618231049}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &618231054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618231049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1229725ff48439ab0e0039ec78d600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAppears
+  dialogueRunner: {fileID: 1056935913}
+  dialogueNodeName: 
+  objectToActivate: {fileID: 0}
 --- !u!1001 &624087402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20359,7 +20375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10512eb411a70d84796a2516bab814ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloseButtons
-  dialogueRunner: {fileID: 0}
+  dialogueRunner: {fileID: 1056935913}
   nodeNameAfterClose: 
   canClick: 0
 --- !u!114 &1588440762
