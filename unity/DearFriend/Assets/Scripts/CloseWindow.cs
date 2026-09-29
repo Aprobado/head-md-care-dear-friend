@@ -56,7 +56,7 @@ public class CloseWindow : MonoBehaviour, IPointerClickHandler
         assetToEnableOnClose = asset;
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public async void OnPointerClick(PointerEventData eventData)
     {
         if (FadeController.IsTransitioning || !canClick) return;
 
@@ -90,6 +90,7 @@ public class CloseWindow : MonoBehaviour, IPointerClickHandler
         //start the node specified in clickNodeName
         if (dialogueRunner != null && !string.IsNullOrEmpty(clickNodeName))
         {
+            await FadeController.WaitForTransitionAsync();
             dialogueRunner.StartDialogue(clickNodeName);
         }
     }

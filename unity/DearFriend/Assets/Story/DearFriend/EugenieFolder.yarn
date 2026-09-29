@@ -29,7 +29,7 @@ title: concoursPDF
 
 Sylvia: C'est fini aujourd'hui ?!
 Camille: C'est qui Eugénie ?
-Sylvia: Mon amie qui est décédée il y a deux mois.
+Sylvia: Une amie qui est décédée il y a deux mois.
 Camille: Je suis désolée. Toutes mes condoléances.
 Sylvia: ...
 Camille: Mais il est pas trop tard pour le concours!
@@ -40,7 +40,6 @@ Sylvia: Tu peux m'aider à CHOISIR une photo ?
 <<setCanClickForCloseButtons CloseButtonConcours true>>
 <<set $isConcoursOpened=true>>
 <<setObjectColor File-concours #D6D6D6>>
-
 
 <<setCanClick File-concours false>>
 <<setCanClick File-guide true>>
@@ -62,7 +61,6 @@ title: lookingFolderContent
 title: guidePDF
 ---
 Sylvia: Je préfère ne pas regarder ça maintenant.
-//<<setCanClick File-guide false>>
 <<setObjectColor File-guide #D6D6D6>>
 
 -> Suicide assisté ? Ça a dû être dur pour toi.
@@ -71,11 +69,10 @@ Sylvia: Je préfère ne pas regarder ça maintenant.
     Sylvia : ... je lui dis que ça me faisait beaucoup de mal...
     Sylvia: Mais, que je voulais surtout être forte pour elle.
     Sylvia: Je suis vraiment heureuse de l'avoir rencontrée.
-    -> Vous vous êtes rencontrées comment ?
-        Sylvia: Dans le couloir !
+    -> Vous vous êtes rencontrées comment, d'ailleurs ?
+        Sylvia: Dans le couloir de l'immeuble !
     -> Ne rien demander.
 -> Ne rien dire.
-
 
 <<jump lookingFolderContent>>
 
@@ -87,7 +84,7 @@ title: tutoPDF
 <<setObjectColor File-tuto #D6D6D6>>
 
 Sylvia: Oh. Haha!
-Sylvia: C'est le costume de Carnaval que j'ai fabriqué avec elle l'hiver passé.
+Sylvia: C'est le costume de carnaval que j'ai fabriqué avec elle l'hiver passé.
 Sylvia: On avait l'air ridicule.
 
 <<jump lookingFolderContent>>
@@ -101,10 +98,9 @@ title: OpenPhoto01
 
 Sylvia: C'était notre dernière randonnée ensemble.
 
--> Dire que c'est une belle photo.
-    Sylvia: Je n'aime plus trop me voir en photo.
+-> C'est une belle photo.
+    Sylvia: Je n'aime pas trop me voir.
     Camille: C'est Eugénie à droite ?
-    Camille: Attends.
     <<deactivateObject PostItNote>>
     Camille: Vous êtes trop belles.
 -> Ne rien dire.
@@ -118,8 +114,7 @@ title: OpenPhoto02
 <<setCanClick File-photo02 false>>
 <<setObjectColor File-photo02 #D6D6D6>>
 <<set $isPhoto02Opened=true>>
-Camille: Hii! Trop beau.
-Sylvia: Oh oui, je me rappelle. On lui avait fait si peur.
+Sylvia: Oh oui, je me rappelle. Il a eu plus peur que nous.
 <<jump lookingFolderContent>>
 ===
 
@@ -132,11 +127,9 @@ title: OpenPhoto03
 
 Sylvia: C'est la rivière près de chez nous.
 Sylvia: On aimait beaucoup se promener là...
-Sylvia : ... quand elle pouvait encore marcher.
-Sylvia: Après, elle souffrait trop.
+Sylvia : ... quand Eugénie pouvait encore marcher.
+Sylvia: Après, elle est tombée malade. Elle souffrait trop.
 Sylvia: ...
-// Sylvia: C'était quelqu'un d'extrêmement joyeux, jusqu'à la fin.
-// Sylvia: On riait toujours comme des baleines.
 
 <<jump lookingFolderContent>>
 ===
@@ -148,7 +141,8 @@ title: OpenPhoto04
 <<setObjectColor File-photo04 #D6D6D6>>
 <<set $isPhoto04Opened=true>>
 Sylvia: Mon dieu! J'avais oublié ce voyage... Je ne sais plus qui a pris la photo.
-Sylvia: On est partie un mois avec des dromadaires. C'était incroyable.
+Sylvia: On est parties un mois avec des dromadaires. C'était incroyable.
+Sylvia: On a ri "comme des baleines".
 
 <<jump lookingFolderContent>>
 ===

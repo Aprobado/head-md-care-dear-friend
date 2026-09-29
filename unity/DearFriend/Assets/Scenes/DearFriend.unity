@@ -688,6 +688,7 @@ GameObject:
   - component: {fileID: 51655642}
   - component: {fileID: 51655641}
   - component: {fileID: 51655643}
+  - component: {fileID: 51655644}
   m_Layer: 0
   m_Name: Folder_Eugenie_Window
   m_TagString: Untagged
@@ -786,6 +787,27 @@ MonoBehaviour:
   dialogueRunner: {fileID: 1056935913}
   dialogueNodeName: 
   objectToActivate: {fileID: 0}
+--- !u!114 &51655644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51655637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777bff9e8b47e3f4e8120ca41447b4bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DayTransform
+  day1:
+    target: {fileID: 0}
+    visible: 0
+  day2:
+    target: {fileID: 0}
+    visible: 0
+  day3:
+    target: {fileID: 0}
+    visible: 0
 --- !u!1001 &61766881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7978,6 +8000,7 @@ GameObject:
   - component: {fileID: 706976978}
   - component: {fileID: 706976979}
   - component: {fileID: 706976980}
+  - component: {fileID: 706976981}
   m_Layer: 0
   m_Name: Photo03D2
   m_TagString: Untagged
@@ -8307,6 +8330,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.01
   pulseSpeed: 0.5
+--- !u!114 &706976981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706976970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb6d8c40f69442c4a73b0bd3ed05701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickSound
+  clickSound: {fileID: 8300000, guid: f668781ea7294b14ba828a9074823920, type: 3}
 --- !u!1 &713348653
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,6 +10862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 850801455}
+  - component: {fileID: 850801456}
   m_Layer: 0
   m_Name: NotEugenie
   m_TagString: Untagged
@@ -10853,6 +10890,27 @@ Transform:
   - {fileID: 5038469255918790233}
   m_Father: {fileID: 543450653598042906}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &850801456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850801454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777bff9e8b47e3f4e8120ca41447b4bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DayTransform
+  day1:
+    target: {fileID: 0}
+    visible: 1
+  day2:
+    target: {fileID: 0}
+    visible: 0
+  day3:
+    target: {fileID: 0}
+    visible: 0
 --- !u!1001 &854063662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14983,6 +15041,7 @@ GameObject:
   - component: {fileID: 1149936511}
   - component: {fileID: 1149936512}
   - component: {fileID: 1149936513}
+  - component: {fileID: 1149936514}
   m_Layer: 0
   m_Name: Photo02D2
   m_TagString: Untagged
@@ -15312,6 +15371,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.01
   pulseSpeed: 0.5
+--- !u!114 &1149936514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149936503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb6d8c40f69442c4a73b0bd3ed05701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickSound
+  clickSound: {fileID: 8300000, guid: f668781ea7294b14ba828a9074823920, type: 3}
 --- !u!1 &1163962713
 GameObject:
   m_ObjectHideFlags: 0
@@ -21007,6 +21079,7 @@ GameObject:
   - component: {fileID: 1671860698}
   - component: {fileID: 1671860699}
   - component: {fileID: 1671860700}
+  - component: {fileID: 1671860701}
   m_Layer: 0
   m_Name: Photo01D2
   m_TagString: Untagged
@@ -21336,6 +21409,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.01
   pulseSpeed: 0.5
+--- !u!114 &1671860701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671860690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb6d8c40f69442c4a73b0bd3ed05701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickSound
+  clickSound: {fileID: 8300000, guid: f668781ea7294b14ba828a9074823920, type: 3}
 --- !u!1 &1672006614
 GameObject:
   m_ObjectHideFlags: 0
@@ -27800,6 +27886,7 @@ GameObject:
   - component: {fileID: 2048199982}
   - component: {fileID: 2048199983}
   - component: {fileID: 2048199984}
+  - component: {fileID: 2048199985}
   m_Layer: 0
   m_Name: Photo04D2
   m_TagString: Untagged
@@ -28129,6 +28216,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.01
   pulseSpeed: 0.5
+--- !u!114 &2048199985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048199975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb6d8c40f69442c4a73b0bd3ed05701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickSound
+  clickSound: {fileID: 8300000, guid: f668781ea7294b14ba828a9074823920, type: 3}
 --- !u!1 &2052644352
 GameObject:
   m_ObjectHideFlags: 0

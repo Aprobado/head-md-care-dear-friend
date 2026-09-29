@@ -8,6 +8,14 @@ public class FadeController : MonoBehaviour
 
     public static bool IsTransitioning { get; private set; }
 
+    public static async Awaitable WaitForTransitionAsync()
+    {
+        while (IsTransitioning)
+        {
+            await Awaitable.NextFrameAsync();
+        }
+    }
+
     private void Awake()
     {
         if (canvasGroup == null)

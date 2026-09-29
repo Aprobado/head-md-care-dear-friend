@@ -114,7 +114,7 @@ Camille: Oui. Écoute, on entend plus le ventilateur.
 
 Sylvia: Je me sens mieux.
 Sylvia: On peut encore faire un peu de rangement ?
-Camille: Je dois VRAIMENT partir dans 5 minutes. J'ai un visio pour l'uni.
+Camille: Hum... Je dois VRAIMENT partir dans 5 minutes. J'ai un visio pour l'uni.
 Sylvia: Je mets un minuteur, alors.
 
 <<activateObject CookingTimer>>
@@ -136,14 +136,16 @@ position: 0,0
 <<StopSound FX KitchenTimerTicTac>>
 <<PlaySound FX KitchenTimerDing>>
 Camille: Déjà?!! Mince. Merci pou le café.
-Sylvia: Mais on a pas fini. Est-ce que tu peux revenir après ton cours ?
-Camille: J'ai un examen important demain, je peux pas faire tard.
-Sylvia: Je ne peux pas envoyer la photo par moi-même.
-Camille: Bon. Je peux repasser dans une heure.
+Sylvia: On a pas fini. Est-ce que tu peux revenir après ton cours ?
+Camille: J'ai un examen important demain, je dois pas faire tard.
+Sylvia: Mais, je ne peux pas envoyer la photo toute seule.
+Camille: Bon. Je repasse dans une heure.
 Sylvia: D'accord. Merci beaucoup.
 Camille: À toute à l'heure.
 <<PlaySound FX PackingBag>>
 <<Next_day DayTransitionManager>>
+
+
 <<jump Part2>>
 // END OF PART I
 ===

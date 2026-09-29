@@ -24,11 +24,11 @@ Camille: Mais pas en couverture !
 Sylvia: C'est vrai...
 Sylvia: Et tes examens, alors ?
 Camille: J'attends les résultats.
-Camille: Merci de m'avoir fait à manger pour moi tous ces jours.
+Camille: Merci de m'avoir fait à manger.
 Camille: J'aurais jamais réussi sans toi.
-Sylvia: N'importe quoi. Mais ravie d'avoir pu aider.
-Sylvia: C'est la dernière fois qu'on se voit ?
-Camille: Non. Il faut fêter cette victoire !
+Sylvia: Ravie d'avoir pu t'aider.
+Camille: C'est peut-être la dernière fois qu'on se voit, alors ?
+Sylvia: Non. Il faut fêter cette victoire !
 Sylvia: Tu veux venir à la fermeture du JARDIN DE SONIA avec moi ?
 
 <<activateObject SoniaGardenPoster>>
@@ -44,17 +44,14 @@ title: Ending
     Camille: Un bonnet ?
     Sylvia: Haha. Peut-être.
     Camille: J'aime pas les surprises !
-    Camille: Un dromadaire ?
     Sylvia: Je me réjouis.
 -> Je peux pas venir, navrée.
-    Sylvia: Tu déménages, je comprends.
+    Sylvia: .. oui, je comprends. Tu déménages.
 
 Sylvia: Merci infiniment.
-Camille: Merci à toi!
 
 <<deactivateObject SoniaGardenPoster>>
 <<activateObject EndCreditsImage>>
-// Laisser du temps ?
 <<jump EndCredits>>
 
 ===
@@ -71,6 +68,4 @@ title: RestartGame
 ---
 <<wait 6>>
 <<RestartingGame InactivityManager>>
-
-
 ===

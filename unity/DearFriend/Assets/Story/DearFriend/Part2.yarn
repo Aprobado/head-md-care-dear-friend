@@ -63,12 +63,9 @@ Camille: J'étudie le droit, pas sûr que je sois de bon conseil.
 title: DiscussPhoto01
 ---
 Sylvia: Non, ça, on peut pas l'envoyer au concours ! Haha!
-//Camille: Ok. C'est vrai. Mais vous êtes si belles.
-//Sylvia: Tu es trop gentille.
 
 <<set $proposed01=true>>
 <<setCanClick Photo01D2 false>>
-
 <<stopPulsatingFile Photo01D2>>
 <<setObjectColor Photo01D2 #241F47>>
 <<jump Photo_Selection>>
@@ -122,8 +119,8 @@ Camille: Oui, je vais rentrer. Désolée.
 
 <<activateObject LunchBox>>
 
-Sylvia: Tiens, je t'ai gardé des pâtes. Prends-les !
-Camille: MERCI ! C'est trop sympa ! J'ai même oublié de manger...
+Sylvia: Je t'ai gardé à manger. Prends !
+Camille: MERCI ! C'est trop sympa ! J'ai oublié de manger aujourd'hui...
 Sylvia: Bonne chance pour demain.
 
 // END OF PART II

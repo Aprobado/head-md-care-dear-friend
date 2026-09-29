@@ -28,7 +28,7 @@ public class CloseButtons : MonoBehaviour
         UpdateButtonState();
     }
 
-    public void CloseParentImage()
+    public async void CloseParentImage()
     {
         if (!canClick || FadeController.IsTransitioning)
             return;
@@ -44,6 +44,7 @@ public class CloseButtons : MonoBehaviour
 
             if (dialogueRunner != null && !string.IsNullOrEmpty(nodeNameAfterClose))
             {
+                await FadeController.WaitForTransitionAsync();
                 dialogueRunner.StartDialogue(nodeNameAfterClose);
             }
         }
