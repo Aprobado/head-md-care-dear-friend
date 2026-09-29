@@ -45,6 +45,7 @@ title: Ending
     Sylvia: Haha. Peut-être.
     Camille: J'aime pas les surprises !
     Camille: Un dromadaire ?
+    Sylvia: Je me réjouis.
 -> Je peux pas venir, navrée.
     Sylvia: Tu déménages, je comprends.
 
@@ -68,7 +69,7 @@ title: EndCredits
 
 title: RestartGame
 ---
-<<wait 7>>
+<<wait 6>>
 <<RestartingGame InactivityManager>>
 
 

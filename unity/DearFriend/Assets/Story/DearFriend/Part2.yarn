@@ -6,18 +6,14 @@ position: -118,-98
 <<setLightTemperature DirectionalLight 1500>>
 <<setLightIntensity DirectionalLight 10>>
 
-
 <<SylviaSittingIdle SylviaMesh>>
 <<deactivateObject Folder_Eugenie_Window>>
 <<deactivateObject NotEugenie>>
-
-
 
 <<declare $proposed01=false>>
 <<declare $proposed02=false>>
 <<declare $proposed03=false>>
 <<declare $proposed04=false>>
-
 
 <<declare $choicePhoto02=false>>
 <<declare $choicePhoto03=false>>
@@ -25,7 +21,6 @@ position: -118,-98
 
 Camille: Ok, je suis là.
 Camille: Tu as choisi la photo ?
-
 Sylvia: Non... Je n'arrive pas à me décider.
 Camille: Laisse-moi t'aider.
 
@@ -122,15 +117,14 @@ Camille: Voilà, c'est fait. Soulagée ?
 Sylvia: Je sais pas trop...
 Sylvia: C'est bien parti, tu es sûre ?
 Camille: Oui.
-Sylvia: Tu devrais rentrer. Tu as l'air fatiguée.
-Camille: En effet. Désolée.
+Sylvia: Tu as l'air fatiguée.
+Camille: Oui, je vais rentrer. Désolée.
 
 <<activateObject LunchBox>>
 
 Sylvia: Tiens, je t'ai gardé des pâtes. Prends-les !
-Camille: Merci! C'est trop sympa ! J'ai oublié de manger...
+Camille: MERCI ! C'est trop sympa ! J'ai même oublié de manger...
 Sylvia: Bonne chance pour demain.
-Camille: Merci...
 
 // END OF PART II
 <<Next_day DayTransitionManager>>

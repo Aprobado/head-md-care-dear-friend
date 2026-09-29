@@ -13,7 +13,6 @@ position: 0,0
 
 <<PlaySoundAndWait FX ComputerFanSpeedsUp>>
 Sylvia: Mon ordinateur fait plus de bruit qu'avant. Vous pouvez me dire pourquoi ? #sound:DialogueSylvia_1
-
 Camille: Il est sur le point de décoller, oui... Je vais voir ce que je peux faire. #sound:DialogueCamille_1
 Camille : Est-ce qu'on peut se tutoyer ?
 Sylvia: Oui, bien sûr.
@@ -48,7 +47,7 @@ title: StartDeleteFiles
 Camille: Je peux effacer ces fichiers ?
 Sylvia: Effacer !? Tout ?
 Camille: On peut faire petit à petit.
-Sylvia: Tu peux cliquer sur ce fichier?
+Sylvia: Tu peux CLIQUER sur ce fichier?
 
 <<startPulsatingFile PDF_lecture>>
 <<setCanClick PDF_lecture true>>
@@ -58,11 +57,9 @@ title: FileLecture
 ---
 // File 1 -> Trashed
 <<setCanClick PDF_lecture false>>
-//<<stopPulsatingFile PDF_lecture>>
 Sylvia: Ah, c'est le programme du Club de lecture.
-Sylvia: Tu peux le supprimer. Je lis jamais les livres imposés.
+Sylvia: Tu peux le METTRE à la corbeille. Je lis jamais les livres qu'on m'impose.
 
-//<<startPulsatingFile PDF_lecture>>
 <<startPulsatingFile Trashbin>>
 <<setCanDrag PDF_lecture true>>
 
@@ -145,7 +142,7 @@ Sylvia: Je ne peux pas envoyer la photo par moi-même.
 Camille: Bon. Je peux repasser dans une heure.
 Sylvia: D'accord. Merci beaucoup.
 Camille: À toute à l'heure.
-
+<<PlaySound FX PackingBag>>
 <<Next_day DayTransitionManager>>
 <<jump Part2>>
 // END OF PART I

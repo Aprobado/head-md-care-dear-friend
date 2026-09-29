@@ -33,7 +33,7 @@ Sylvia: Mon amie qui est décédée il y a deux mois.
 Camille: Je suis désolée. Toutes mes condoléances.
 Sylvia: ...
 Camille: Mais il est pas trop tard pour le concours!
-Sylvia: Tu peux m'aider à choisir une photo ?
+Sylvia: Tu peux m'aider à CHOISIR une photo ?
 
 
 <<startPulsatingFile CloseButtonConcours>>
@@ -65,10 +65,15 @@ Sylvia: Je préfère ne pas regarder ça maintenant.
 //<<setCanClick File-guide false>>
 <<setObjectColor File-guide #D6D6D6>>
 
--> Ça a dû être dur pour toi.
-    Sylvia: Quand elle m'a annoncé la nouvelle. Je lui dis que ça me faisait mal...
-    Sylvia: Mais, je voulais surtout être forte pour elle, ne pas m'effondrer.
-    Sylvia: Je suis heureuse de l'avoir rencontrée.
+-> Suicide assisté ? Ça a dû être dur pour toi.
+    Sylvia: ... Oui.
+    Sylvia: Quand Eugénie m'a annoncé qu'elle voulait partir... 
+    Sylvia : ... je lui dis que ça me faisait beaucoup de mal...
+    Sylvia: Mais, que je voulais surtout être forte pour elle.
+    Sylvia: Je suis vraiment heureuse de l'avoir rencontrée.
+    -> Vous vous êtes rencontrées comment ?
+        Sylvia: Dans le couloir !
+    -> Ne rien demander.
 -> Ne rien dire.
 
 
@@ -101,7 +106,7 @@ Sylvia: C'était notre dernière randonnée ensemble.
     Camille: C'est Eugénie à droite ?
     Camille: Attends.
     <<deactivateObject PostItNote>>
-    Camille: Vous êtes trop belles ensemble. 
+    Camille: Vous êtes trop belles.
 -> Ne rien dire.
 
 <<jump lookingFolderContent>>
