@@ -6,7 +6,7 @@ using Yarn.Unity;
 public class AudioPlaySound : MonoBehaviour
 {
     public AudioClip ComputerWarning;
-    public AudioClip ComputerNotification;
+    public AudioClip ComputerShutdown;
     public AudioClip ComputerHumming;
     public AudioClip ComputerFansSpeedsUp;
     public AudioClip CameraZoomOut;
@@ -20,7 +20,7 @@ public class AudioPlaySound : MonoBehaviour
 
     [Header("Playback")]
     [SerializeField] private bool loopComputerWarning;
-    [SerializeField] private bool loopComputerNotification;
+    [SerializeField] private bool loopComputerShutdown;
     [SerializeField] private bool loopComputerHumming;
     [SerializeField] private bool loopComputerFansSpeedsUp;
     [SerializeField] private bool loopCameraZoomOut;
@@ -39,9 +39,9 @@ public class AudioPlaySound : MonoBehaviour
         return soundName switch
         {
             "Warning"       => ComputerWarning,
-            "Notification"  => ComputerNotification,
             "ZoomOut"       => CameraZoomOut,
             "ComputerFanSpeedsUp" => ComputerFansSpeedsUp,
+            "ComputerShutdown"  => ComputerShutdown,
             "ComputerHumming" => ComputerHumming,
             "KitchenTimerTicTac" => KitchenTimerTicTac,
             "KitchenTimerDing" => KitchenTimerDing,
@@ -58,9 +58,9 @@ public class AudioPlaySound : MonoBehaviour
         return soundName switch
         {
             "Warning" => loopComputerWarning,
-            "Notification" => loopComputerNotification,
             "ZoomOut" => loopCameraZoomOut,
             "ComputerFanSpeedsUp" => loopComputerFansSpeedsUp,
+            "ComputerShutdown" => loopComputerShutdown,
             "ComputerHumming" => loopComputerHumming,
             "KitchenTimerTicTac" => loopKitchenTimerTicTac,
             "KitchenTimerDing" => loopKitchenTimerDing,

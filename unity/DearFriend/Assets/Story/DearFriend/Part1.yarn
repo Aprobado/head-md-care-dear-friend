@@ -26,13 +26,6 @@ Sylvia: Oui, bien sûr.
 <<setCanClick PDF_assurance false>>
 <<setCanClick PDF_urgent false>>
 
-//<<setCanClick Folder_Divers false>>
-//<<setCanClick Folder_Factures false>>
-//<<setCanClick Folder_Famille false>>
-//<<setCanClick Folder_Impots false>>
-//<<setCanClick Folder_Eugenie_Icon false>>
-//<<setCanClick Trashbin false>>
-
 ===
 title: WarningWindow
 ---
@@ -55,7 +48,7 @@ title: StartDeleteFiles
 Camille: Je peux effacer ces fichiers ?
 Sylvia: Effacer !? Tout ?
 Camille: On peut faire petit à petit.
-Sylvia: Tu peux me montrer ce fichier?
+Sylvia: Tu peux cliquer sur ce fichier?
 
 <<startPulsatingFile PDF_lecture>>
 <<setCanClick PDF_lecture true>>
@@ -67,10 +60,10 @@ title: FileLecture
 <<setCanClick PDF_lecture false>>
 //<<stopPulsatingFile PDF_lecture>>
 Sylvia: Ah, c'est le programme du Club de lecture.
-Sylvia: Tu peux le supprimer. Je n'y vais jamais.
+Sylvia: Tu peux le supprimer. Je lis jamais les livres imposés.
 
 //<<startPulsatingFile PDF_lecture>>
-//<<startPulsatingFile Trashbin>>
+<<startPulsatingFile Trashbin>>
 <<setCanDrag PDF_lecture true>>
 
 ===
@@ -80,7 +73,7 @@ title: FileAssurance
 <<startPulsatingFile PDF_assurance>>
 <<stopPulsatingFile Trashbin>>
 Camille: "Assurance" ? Il n'y a pas de dossier "Assurances"...
-Sylvia: "Divers", alors.
+Sylvia: "Divers", alors...
 
 <<setCanDrag PDF_assurance true>>
 
@@ -150,7 +143,7 @@ Camille: Déjà?!! Mince. Merci pou le café.
 Sylvia: Mais on a pas fini. Est-ce que tu peux revenir après ton cours ?
 Camille: J'ai un examen important demain, je peux pas faire tard.
 Sylvia: Je ne peux pas envoyer la photo par moi-même.
-Camille: Bon. Je peux repasser dans 2 heures.
+Camille: Bon. Je peux repasser dans une heure.
 Sylvia: D'accord. Merci beaucoup.
 Camille: À toute à l'heure.
 

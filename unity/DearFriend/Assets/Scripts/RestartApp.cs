@@ -12,7 +12,7 @@ public class EndTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (gameEnded)
+        if (gameEnded && !FadeController.IsTransitioning)
         {
             // Mobile touch
             if (Input.touchCount > 0)

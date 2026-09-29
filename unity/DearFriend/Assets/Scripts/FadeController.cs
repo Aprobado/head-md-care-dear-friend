@@ -6,6 +6,8 @@ public class FadeController : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private float fadeDuration = 1f;
 
+    public static bool IsTransitioning { get; private set; }
+
     private void Awake()
     {
         if (canvasGroup == null)
@@ -34,6 +36,7 @@ public class FadeController : MonoBehaviour
 
     private IEnumerator Fade(float start, float end)
     {
+        IsTransitioning = true;
         float elapsed = 0f;
 
         canvasGroup.alpha = start;
@@ -48,10 +51,12 @@ public class FadeController : MonoBehaviour
 
         canvasGroup.alpha = end;
         canvasGroup.blocksRaycasts = end > 0f;
+        IsTransitioning = false;
     }
 
     private async Awaitable FadeAsync(float start, float end)
     {
+        IsTransitioning = true;
         float elapsed = 0f;
 
         canvasGroup.alpha = start;
@@ -66,5 +71,6 @@ public class FadeController : MonoBehaviour
 
         canvasGroup.alpha = end;
         canvasGroup.blocksRaycasts = end > 0f;
+        IsTransitioning = false;
     }
 }

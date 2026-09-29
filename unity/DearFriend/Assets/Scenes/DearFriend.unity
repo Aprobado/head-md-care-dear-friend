@@ -8270,7 +8270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.01
-  pulseSpeed: 1
+  pulseSpeed: 0.5
 --- !u!1 &713348653
 GameObject:
   m_ObjectHideFlags: 0
@@ -10007,7 +10007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f4e6f3e079241e0804a3c1fc771de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
-  pulseAmount: 0.01
+  pulseAmount: 0.02
   pulseSpeed: 1
 --- !u!114 &824979815
 MonoBehaviour:
@@ -10796,7 +10796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &850801455
 Transform:
   m_ObjectHideFlags: 0
@@ -15125,7 +15125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.01
-  pulseSpeed: 1
+  pulseSpeed: 0.5
 --- !u!1 &1163962713
 GameObject:
   m_ObjectHideFlags: 0
@@ -20454,7 +20454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CloseWindow
   dialogueRunner: {fileID: 1056935913}
   clickNodeName: StartDeleteFiles
-  closeSound: {fileID: 8300000, guid: 14c41db1d3e6f5342bb3bdb6b16521cd, type: 3}
+  closeSound: {fileID: 0}
   pulseAmount: 0.25
   pulseSpeed: 4
   canClick: 0
@@ -20978,7 +20978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.01
-  pulseSpeed: 1
+  pulseSpeed: 0.5
 --- !u!1 &1672006614
 GameObject:
   m_ObjectHideFlags: 0
@@ -24641,6 +24641,7 @@ GameObject:
   - component: {fileID: 1951783989}
   - component: {fileID: 1951783988}
   - component: {fileID: 1951783987}
+  - component: {fileID: 1951783990}
   m_Layer: 0
   m_Name: FX
   m_TagString: Untagged
@@ -24676,7 +24677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioPlaySound
   ComputerWarning: {fileID: 8300000, guid: e8a539686e4d04208aa68dec630f3020, type: 3}
-  ComputerNotification: {fileID: 0}
+  ComputerShutdown: {fileID: 8300000, guid: 1a5f9a5396885f14aaba697038ba003d, type: 3}
   ComputerHumming: {fileID: 8300000, guid: 9540c6865991f484b8fa44c40e1cfa02, type: 3}
   ComputerFansSpeedsUp: {fileID: 8300000, guid: 0f7bc229a8516b6479253cc8f8a43f32, type: 3}
   CameraZoomOut: {fileID: 8300000, guid: ee8afd4f922ca054598d7589c851ffc4, type: 3}
@@ -24687,7 +24688,7 @@ MonoBehaviour:
   PackingBag: {fileID: 8300000, guid: 622c4b2d6245ac34bb1b822c73c12655, type: 3}
   LastZoomOut: {fileID: 8300000, guid: bbe7b42b9e8441f40ba4aef9a6749ab6, type: 3}
   loopComputerWarning: 0
-  loopComputerNotification: 0
+  loopComputerShutdown: 0
   loopComputerHumming: 0
   loopComputerFansSpeedsUp: 0
   loopCameraZoomOut: 0
@@ -25675,6 +25676,103 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fabb2ed10c738e0418e207ff5dbcb778, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1951783990
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951783974}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 1a5f9a5396885f14aaba697038ba003d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -27656,7 +27754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.01
-  pulseSpeed: 1
+  pulseSpeed: 0.5
 --- !u!1 &2052644352
 GameObject:
   m_ObjectHideFlags: 0
@@ -28949,7 +29047,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &970797241911033365
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30855,7 +30953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PulsatingFile
   pulseAmount: 0.1
-  pulseSpeed: 4
+  pulseSpeed: 3
 --- !u!4 &7250304917748987879
 Transform:
   m_ObjectHideFlags: 0
@@ -31436,6 +31534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9090317204097134720}
   - component: {fileID: 9090317204097134721}
+  - component: {fileID: 9090317204097134722}
   m_Layer: 0
   m_Name: LunchBox
   m_TagString: Untagged
@@ -31612,6 +31711,21 @@ MonoBehaviour:
   day3:
     target: {fileID: 1834021018}
     visible: 0
+--- !u!114 &9090317204097134722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8461309294735043130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1229725ff48439ab0e0039ec78d600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAppears
+  dialogueRunner: {fileID: 0}
+  dialogueNodeName: 
+  objectToActivate: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

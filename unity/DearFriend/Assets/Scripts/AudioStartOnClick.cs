@@ -24,6 +24,9 @@ public class ClickSound : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (FadeController.IsTransitioning)
+            return;
+
         audioSource.PlayOneShot(clickSound);
     }
 }

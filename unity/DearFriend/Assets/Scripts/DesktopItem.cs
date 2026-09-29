@@ -261,7 +261,7 @@ public class DesktopItem : MonoBehaviour,
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (IsBlockedByOpenContent() || !canDrag)
+        if (FadeController.IsTransitioning || IsBlockedByOpenContent() || !canDrag)
         {
             return;
         }
@@ -275,7 +275,7 @@ public class DesktopItem : MonoBehaviour,
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (!canDrag)
+        if (FadeController.IsTransitioning || !canDrag)
         {
             return;
         }
@@ -406,6 +406,11 @@ public class DesktopItem : MonoBehaviour,
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (FadeController.IsTransitioning)
+        {
+            return;
+        }
+
         if (IsBlockedByOpenContent())
         {
             Debug.LogWarning($"DesktopItem: click blocked on '{name}' because another content is open.");

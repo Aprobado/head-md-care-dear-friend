@@ -2,7 +2,6 @@ title: Part3
 position: 0,0
 ---
 
-//<<jump EndCredits>>
 <<deactivateObject Computer>>
 <<setLightTemperature DirectionalLight 10405>>
 <<setLightIntensity DirectionalLight 1>>
@@ -30,14 +29,11 @@ Camille: J'aurais jamais réussi sans toi.
 Sylvia: N'importe quoi. Mais ravie d'avoir pu aider.
 Sylvia: C'est la dernière fois qu'on se voit ?
 Camille: Non. Il faut fêter cette victoire !
-Sylvia: Bonne idée. Tu veux venir à la fermeture du JARDIN DE SONIA avec moi ?
+Sylvia: Tu veux venir à la fermeture du JARDIN DE SONIA avec moi ?
 
 <<activateObject SoniaGardenPoster>>
 <<activateObject SoniaGardenPoster>>
 <<startPulsatingFile SoniaGardenPoster>>
-//<<deactivateObject MagazineFox>>
-//<<deactivateObject MagazineRiver>>
-//<<deactivateObject MagazineCamel>>
 
 ===
 title: Ending

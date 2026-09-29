@@ -58,7 +58,7 @@ public class CloseWindow : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!canClick) return;
+        if (FadeController.IsTransitioning || !canClick) return;
 
         if (assetToEnableOnClose != null)
         {

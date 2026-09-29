@@ -15,6 +15,11 @@ public class PlayInputSound : MonoBehaviour
 
     void Update()
     {
+        if (FadeController.IsTransitioning)
+        {
+            return;
+        }
+
         // Mouse click
         if (Input.GetMouseButtonDown(0))
         {

@@ -30,6 +30,9 @@ public class ClickOnPassword : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (FadeController.IsTransitioning)
+            return;
+
         if (inactivityManager != null)
             inactivityManager.BeginSession();
 

@@ -98,6 +98,9 @@ public class DialogueGlobalClick : MonoBehaviour
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            if (FadeController.IsTransitioning)
+                return;
+
             owner.AdvanceDialogue();
         }
     }

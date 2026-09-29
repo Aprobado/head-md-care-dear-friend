@@ -29,11 +29,6 @@ Camille: Tu as choisi la photo ?
 Sylvia: Non... Je n'arrive pas à me décider.
 Camille: Laisse-moi t'aider.
 
-//<<startPulsatingFile Photo01D2>>
-//<<startPulsatingFile Photo02D2>>
-//<<startPulsatingFile Photo03D2>>
-//<<startPulsatingFile Photo04D2>>
-
 <<jump Photo_Selection>>
 
 ===
@@ -47,24 +42,23 @@ title: Photo_Selection
 ===
 title: CamilleChoice
 ---
-
-Camille: Elles sont très bien ces photos!
 Camille: T'es trop négative.
 Sylvia: J'ai peur... 
-Sylvia: J'ai peur de décevoir Eugénie.
-Camille: Je comprends.
-
+Camille: Peur de décevoir Eugénie?
+Sylvia: Oui, haha.
+Camille: Je vois.
 Camille: Moi, j'enverrais...
 
--> le renard
+-> ... le RENARD !
     <<set $choicePhoto02=true>>
--> le ruisseau
+-> ... la FORÊT !
     <<set $choicePhoto03 =true>>
--> le dromadaire
+-> ... le DROMADAIRE !
     <<set $choicePhoto04 =true>>
 
 Sylvia: Hum...
-Sylvia: D'accord. Je fais confiance à la jeunesse.
+Sylvia: D'accord. 
+Sylvia: Je te fais confiance.
 Camille: J'étudie le droit, pas sûr que je sois de bon conseil.
 
 <<jump PhotoSent>>
@@ -73,7 +67,7 @@ Camille: J'étudie le droit, pas sûr que je sois de bon conseil.
 
 title: DiscussPhoto01
 ---
-Sylvia: On gagnera jamais le concours avec ça! Haha!
+Sylvia: Non, ça, on peut pas l'envoyer au concours ! Haha!
 //Camille: Ok. C'est vrai. Mais vous êtes si belles.
 //Sylvia: Tu es trop gentille.
 
@@ -121,18 +115,20 @@ title: PhotoSent
 ---
 <<deactivateObject PhotoSelection>>
 <<activateObject BlackScreen>>
+<<PlaySound FX ComputerShutdown>>
 <<ZoomOutCamera 60 0.02 -0.24 10>>
 
 Camille: Voilà, c'est fait. Soulagée ?
+Sylvia: Je sais pas trop...
 Sylvia: C'est bien parti, tu es sûre ?
 Camille: Oui.
-Sylvia: Je sais pas si je suis mieux maintenant...
-Sylvia: Je te dirais si on a gagné.
-Camille: Oui, avec plaisir.
-Sylvia: Pas trop fatiguée ?
-Camille: Si... Je vais rentrer, d'ailleurs. Désolée.
-Sylvia: Je t'ai mis des pâtes de côté. Prends-les !
-Camille: Merci ! Je n'ai pas encore eu le temps de manger...
+Sylvia: Tu devrais rentrer. Tu as l'air fatiguée.
+Camille: En effet. Désolée.
+
+<<activateObject LunchBox>>
+
+Sylvia: Tiens, je t'ai gardé des pâtes. Prends-les !
+Camille: Merci! C'est trop sympa ! J'ai oublié de manger...
 Sylvia: Bonne chance pour demain.
 Camille: Merci...
 
