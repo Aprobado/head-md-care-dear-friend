@@ -96,7 +96,7 @@ Camille: Regarde ce fichier, c'est clairement un virus.
 <<startPulsatingFile PDF_urgent>>
 
 Sylvia: Qu'est-ce qu'il faut faire ?
-Camille: Directe à la poubelle.
+Camille: Direct à la poubelle.
 
 <<stopPulsatingFile PDF_urgent>>
 //<<setCanClick PDF_urgent true>>
@@ -107,7 +107,7 @@ title: EugenieFolderDiscovery
 ---
 
 Sylvia: Il est parti ?
-Camille: Oui. Écoute, on entend plus le ventilateur.
+Camille: Oui. Écoute, on n'entend plus le ventilateur.
 
 <<PlaySound FX ZoomOut>>
 <<ZoomOutCamera 37.9 0.02 -0.24 5>>
@@ -135,13 +135,13 @@ position: 0,0
 <<Stop_timer Head>>
 <<StopSound FX KitchenTimerTicTac>>
 <<PlaySound FX KitchenTimerDing>>
-Camille: Déjà?!! Mince. Merci pou le café.
-Sylvia: On a pas fini. Est-ce que tu peux revenir après ton cours ?
+Camille: Déjà?!! Mince. Merci pour le café.
+Sylvia: On n'a pas fini. Est-ce que tu peux revenir après ton cours ?
 Camille: J'ai un examen important demain, je dois pas faire tard.
 Sylvia: Mais, je ne peux pas envoyer la photo toute seule.
 Camille: Bon. Je repasse dans une heure.
 Sylvia: D'accord. Merci beaucoup.
-Camille: À toute à l'heure.
+Camille: À tout à l'heure.
 <<PlaySound FX PackingBag>>
 <<Next_day DayTransitionManager>>
 
