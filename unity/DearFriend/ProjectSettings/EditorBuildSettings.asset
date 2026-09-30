@@ -6,10 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ArchiveDFMessagingApp.unity
-    guid: 788b99b1fb5ca524eaeadcab88a1926b
-  - enabled: 1
-    path: Assets/Scenes/SessionSystem.unity
-    guid: 4764e273fc1b65a4cb5066b6778085f4
+    path: Assets/Scenes/DearFriend.unity
+    guid: 109646dcd5a866248b4cccb345f33a93
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
