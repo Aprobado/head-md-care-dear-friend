@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -118,6 +119,9 @@ public class InactivityManager : MonoBehaviour
             CheckCornerHold(position);
             return;
         }
+        
+        if (AllCornersTouched())
+            OpenMenu(false);
 
         ResetCornerHold();
         if (!sessionStarted)
@@ -145,6 +149,23 @@ public class InactivityManager : MonoBehaviour
 
         position = Vector2.zero;
         return false;
+    }
+
+    private bool AllCornersTouched()
+    {
+        var touchCount = Touchscreen.current.touches.Count;
+        if (touchCount < 4) return false;
+
+        var corners = new List<int>();
+        for (var i = 0; i < 4; i++)
+        {
+            var position = Touchscreen.current.touches[i].position.ReadValue();
+            var corner = GetCorner(position);
+            if (corner < 0) return false;   // not a corner
+            if (corners.Contains(corner)) return false; // twice the same corner
+            corners.Add(corner);
+        }
+        return true;
     }
 
     private void CheckCornerHold(Vector2 position)
